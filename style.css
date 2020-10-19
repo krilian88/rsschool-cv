@@ -1,0 +1,190 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: rgb(231, 236, 227);
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.general {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills_and_education {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 7%;
+  margin-right: 5%;
+}
+
+.projects_and_languages {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 7%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  text-align: center;
+}
+
+.object {
+  font-size: 20px;
+  background-color: rgba(49, 161, 64, 0.616);
+  padding: 8px;
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+h2 {
+  font-size: 25px;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+p,
+li,
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.object > span {
+  font-weight: normal;
+}
+
+img {
+  border-radius: 30px;
+}
+.about {
+  background-color: rgba(15, 82, 48, 0.247);
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a[href*="git"]::before {
+  content: "";
+  background-image: url(https://pngimg.com/uploads/github/github_PNG58.png);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 63px;
+  display: inline-block;
+  vertical-align: middle;
+}
+a[href*="git"]:hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.1);
+}
+a[href*="lin"]::before {
+  content: "";
+  background-image: url(https://img1.freepng.ru/20180716/vyj/kisspng-computer-icons-social-media-linkedin-social-networ-communicator-icon-5b4cf1cbd91ad2.3750261115317692918893.jpg);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+a[href*="lin"]:hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.1);
+}
+a[href*="tel"]::before {
+  content: "";
+  background-image: url(https://pngimg.com/uploads/phone/phone_PNG49052.png);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+a[href*="tel"]:hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.1);
+}
+a[href*="mail"]::before {
+  content: "";
+  background-image: url(https://png.pngtree.com/png-clipart/20190520/original/pngtree-email-symbol-icon-png-image_3569787.jpg);
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+a[href*="mail"]:hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 760px) {
+  body {
+    align-items: center;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills_and_education {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .projects_and_languages {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
