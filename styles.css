@@ -1,0 +1,92 @@
+body {
+    background-color: #e8ecee;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator { 
+    border: 1px solid gray;
+    padding: 10px 10px 20px 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+}
+
+.input-wrapper {
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 440px;
+}
+
+.history {
+    background-color: rgb(229, 240, 248);
+    height: 20px;
+    border-bottom: 1px solid #bfbfbf;
+    font-size: 12px;
+    padding: 10px 17px;
+    text-align: right;
+}
+
+.result {
+    height: 30px;
+    border: none;
+    font-size: 25px;
+    pointer-events: none;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.key {
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: 85px;
+    height: 35px;
+    font-size: 16px;
+
+    box-shadow: 1px 1px 1px 1px #bbb;
+    cursor: pointer;
+    transition: box-shadow .2s, transform .2s;
+}
+
+.math-operation {
+    border-color: #dd3446;
+    color: white;
+    background-color: #dd3446;
+}
+.math-operation-outline {
+    color: #dd3446;
+    border-color: #dd3446;
+}
+
+.erase {
+    border-color:  #18a3b6;
+    background-color: #18a3b6;
+    color: white;
+}
+
+.reset {
+    border-color:  #18a3b6;
+    color:  #18a3b6;
+}
+
+.equal { 
+    border-color: #0369d9;
+    background-color: #0369d9;
+    color: white;
+}
