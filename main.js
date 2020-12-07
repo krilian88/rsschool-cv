@@ -1,6 +1,7 @@
 const app = () => {
   const song = document.querySelector(".song");
   const play = document.querySelector(".play");
+  const replay = document.querySelector(".replay");
   const outline = document.querySelector(".moving-outline circle");
   const video = document.querySelector(".vid-container video");
 
@@ -15,6 +16,7 @@ const app = () => {
 
   outline.style.strokeDasharray = outlineLength;
   outline.style.strokeDashoffset = outlineLength;
+  
 
   sounds.forEach((sound) => {
     sound.addEventListener("click", function () {
@@ -27,6 +29,16 @@ const app = () => {
   play.addEventListener("click", () => {
     checkPlaying(song);
   });
+  
+  replay.addEventListener("click", function() {
+    restartSong(song); 
+  });
+
+  const restartSong = song => {
+    let currentTime = song.currentTime;
+    song.currentTime = 0;
+  }
+
 
   timeSelect.forEach((option) => {
     option.addEventListener("click", function () {
