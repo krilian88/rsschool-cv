@@ -35,9 +35,6 @@
   pointer-events: none;
 }
 
-.play{
-justify-content:center
-} 
 .time-select button,
 .sound-picker button {
   color: white;
