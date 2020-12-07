@@ -65,12 +65,9 @@ function getName() {
 
 // Set Name
 function setName(e) {
-  if (e.type === 'keypress') {
-    // Make sure enter is pressed
-    if (e.which == 13 || e.keyCode == 13) {
+  if (e.type === 'keypress' && (e.which == 13 || e.keyCode == 13)) {
       localStorage.setItem('name', e.target.innerText);
-      name.blur();
-    }
+      name.blur(); 
   } else {
     localStorage.setItem('name', e.target.innerText);
   }
