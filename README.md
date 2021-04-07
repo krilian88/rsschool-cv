@@ -1,1 +1,1 @@
-https://krilian88.github.io/rsschool-cv/index
+https://github.com/krilian88/rsschool-cv/tree/Weather/index
